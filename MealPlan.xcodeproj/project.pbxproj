@@ -15,6 +15,7 @@
 		DF2C59A0262FC83E00F229E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2C5975262FC83A00F229E8 /* ContentView.swift */; };
 		DF2C59A1262FC83E00F229E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF2C5976262FC83E00F229E8 /* Assets.xcassets */; };
 		DF2C59A2262FC83E00F229E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF2C5976262FC83E00F229E8 /* Assets.xcassets */; };
+		DF2C59BC262FCB9F00F229E8 /* MealPlanUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2C59BB262FCB9F00F229E8 /* MealPlanUnitTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +27,20 @@
 			remoteInfo = "MealPlan (iOS)";
 		};
 		DF2C5997262FC83E00F229E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF2C596F262FC83A00F229E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF2C5982262FC83E00F229E8;
+			remoteInfo = "MealPlan (macOS)";
+		};
+		DF2C59BE262FCB9F00F229E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF2C596F262FC83A00F229E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF2C597A262FC83E00F229E8;
+			remoteInfo = "MealPlan (iOS)";
+		};
+		DF2C59C8262FCBA600F229E8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DF2C596F262FC83A00F229E8 /* Project object */;
 			proxyType = 1;
@@ -49,6 +64,9 @@
 		DF2C5996262FC83E00F229E8 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2C599A262FC83E00F229E8 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		DF2C599C262FC83E00F229E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF2C59B9262FCB9F00F229E8 /* MealPlanUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MealPlanUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF2C59BB262FCB9F00F229E8 /* MealPlanUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlanUnitTests.swift; sourceTree = "<group>"; };
+		DF2C59BD262FCB9F00F229E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +98,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DF2C59B6262FCB9F00F229E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -91,6 +116,7 @@
 				DF2C5984262FC83E00F229E8 /* macOS */,
 				DF2C598E262FC83E00F229E8 /* Tests iOS */,
 				DF2C5999262FC83E00F229E8 /* Tests macOS */,
+				DF2C59BA262FCB9F00F229E8 /* MealPlanUnitTests */,
 				DF2C597C262FC83E00F229E8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +138,7 @@
 				DF2C5983262FC83E00F229E8 /* MealPlan.app */,
 				DF2C598B262FC83E00F229E8 /* Tests iOS.xctest */,
 				DF2C5996262FC83E00F229E8 /* Tests macOS.xctest */,
+				DF2C59B9262FCB9F00F229E8 /* MealPlanUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,6 +176,15 @@
 				DF2C599C262FC83E00F229E8 /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		DF2C59BA262FCB9F00F229E8 /* MealPlanUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF2C59BB262FCB9F00F229E8 /* MealPlanUnitTests.swift */,
+				DF2C59BD262FCB9F00F229E8 /* Info.plist */,
+			);
+			path = MealPlanUnitTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +260,25 @@
 			productReference = DF2C5996262FC83E00F229E8 /* Tests macOS.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		DF2C59B8262FCB9F00F229E8 /* MealPlanUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF2C59C0262FCB9F00F229E8 /* Build configuration list for PBXNativeTarget "MealPlanUnitTests" */;
+			buildPhases = (
+				DF2C59B5262FCB9F00F229E8 /* Sources */,
+				DF2C59B6262FCB9F00F229E8 /* Frameworks */,
+				DF2C59B7262FCB9F00F229E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF2C59BF262FCB9F00F229E8 /* PBXTargetDependency */,
+				DF2C59C9262FCBA600F229E8 /* PBXTargetDependency */,
+			);
+			name = MealPlanUnitTests;
+			productName = MealPlanUnitTests;
+			productReference = DF2C59B9262FCB9F00F229E8 /* MealPlanUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -247,6 +302,10 @@
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = DF2C5982262FC83E00F229E8;
 					};
+					DF2C59B8262FCB9F00F229E8 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = DF2C597A262FC83E00F229E8;
+					};
 				};
 			};
 			buildConfigurationList = DF2C5972262FC83A00F229E8 /* Build configuration list for PBXProject "MealPlan" */;
@@ -266,6 +325,7 @@
 				DF2C5982262FC83E00F229E8 /* MealPlan (macOS) */,
 				DF2C598A262FC83E00F229E8 /* Tests iOS */,
 				DF2C5995262FC83E00F229E8 /* Tests macOS */,
+				DF2C59B8262FCB9F00F229E8 /* MealPlanUnitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -295,6 +355,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		DF2C5994262FC83E00F229E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF2C59B7262FCB9F00F229E8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -338,6 +405,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DF2C59B5262FCB9F00F229E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF2C59BC262FCB9F00F229E8 /* MealPlanUnitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -350,6 +425,16 @@
 			isa = PBXTargetDependency;
 			target = DF2C5982262FC83E00F229E8 /* MealPlan (macOS) */;
 			targetProxy = DF2C5997262FC83E00F229E8 /* PBXContainerItemProxy */;
+		};
+		DF2C59BF262FCB9F00F229E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF2C597A262FC83E00F229E8 /* MealPlan (iOS) */;
+			targetProxy = DF2C59BE262FCB9F00F229E8 /* PBXContainerItemProxy */;
+		};
+		DF2C59C9262FCBA600F229E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF2C5982262FC83E00F229E8 /* MealPlan (macOS) */;
+			targetProxy = DF2C59C8262FCBA600F229E8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -647,6 +732,51 @@
 			};
 			name = Release;
 		};
+		DF2C59C1262FCB9F00F229E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84C29N4H5C;
+				INFOPLIST_FILE = MealPlanUnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.slichter.MealPlanUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MealPlan.app/MealPlan";
+			};
+			name = Debug;
+		};
+		DF2C59C2262FCB9F00F229E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84C29N4H5C;
+				INFOPLIST_FILE = MealPlanUnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.slichter.MealPlanUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MealPlan.app/MealPlan";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -691,6 +821,15 @@
 			buildConfigurations = (
 				DF2C59AF262FC83E00F229E8 /* Debug */,
 				DF2C59B0262FC83E00F229E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF2C59C0262FCB9F00F229E8 /* Build configuration list for PBXNativeTarget "MealPlanUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF2C59C1262FCB9F00F229E8 /* Debug */,
+				DF2C59C2262FCB9F00F229E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
