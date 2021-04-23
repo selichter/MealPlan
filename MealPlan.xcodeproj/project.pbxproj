@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DF2C5990262FC83E00F229E8 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2C598F262FC83E00F229E8 /* Tests_iOS.swift */; };
-		DF2C599B262FC83E00F229E8 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2C599A262FC83E00F229E8 /* Tests_macOS.swift */; };
+		DF2C599B262FC83E00F229E8 /* MealPlanSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2C599A262FC83E00F229E8 /* MealPlanSidebar.swift */; };
 		DF2C599D262FC83E00F229E8 /* MealPlanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2C5974262FC83A00F229E8 /* MealPlanApp.swift */; };
 		DF2C599E262FC83E00F229E8 /* MealPlanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2C5974262FC83A00F229E8 /* MealPlanApp.swift */; };
 		DF2C599F262FC83E00F229E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2C5975262FC83A00F229E8 /* ContentView.swift */; };
@@ -16,6 +16,10 @@
 		DF2C59A1262FC83E00F229E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF2C5976262FC83E00F229E8 /* Assets.xcassets */; };
 		DF2C59A2262FC83E00F229E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF2C5976262FC83E00F229E8 /* Assets.xcassets */; };
 		DF2C59BC262FCB9F00F229E8 /* MealPlanUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2C59BB262FCB9F00F229E8 /* MealPlanUnitTests.swift */; };
+		DF2C59D126310C6900F229E8 /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2C59D026310C6900F229E8 /* Sidebar.swift */; };
+		DF2C59DE26310CB600F229E8 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2C59DD26310CB600F229E8 /* MenuView.swift */; };
+		DF2C59F326310DB400F229E8 /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2C59D026310C6900F229E8 /* Sidebar.swift */; };
+		DF2C59F926310DBF00F229E8 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2C59DD26310CB600F229E8 /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,11 +66,13 @@
 		DF2C598F262FC83E00F229E8 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
 		DF2C5991262FC83E00F229E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF2C5996262FC83E00F229E8 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF2C599A262FC83E00F229E8 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		DF2C599A262FC83E00F229E8 /* MealPlanSidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlanSidebar.swift; sourceTree = "<group>"; };
 		DF2C599C262FC83E00F229E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF2C59B9262FCB9F00F229E8 /* MealPlanUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MealPlanUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2C59BB262FCB9F00F229E8 /* MealPlanUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlanUnitTests.swift; sourceTree = "<group>"; };
 		DF2C59BD262FCB9F00F229E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF2C59D026310C6900F229E8 /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
+		DF2C59DD26310CB600F229E8 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +130,8 @@
 		DF2C5973262FC83A00F229E8 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				DF2C59DC26310CA400F229E8 /* Menu */,
+				DF2C59CF26310C5A00F229E8 /* Navigation */,
 				DF2C5974262FC83A00F229E8 /* MealPlanApp.swift */,
 				DF2C5975262FC83A00F229E8 /* ContentView.swift */,
 				DF2C5976262FC83E00F229E8 /* Assets.xcassets */,
@@ -172,7 +180,7 @@
 		DF2C5999262FC83E00F229E8 /* Tests macOS */ = {
 			isa = PBXGroup;
 			children = (
-				DF2C599A262FC83E00F229E8 /* Tests_macOS.swift */,
+				DF2C599A262FC83E00F229E8 /* MealPlanSidebar.swift */,
 				DF2C599C262FC83E00F229E8 /* Info.plist */,
 			);
 			path = "Tests macOS";
@@ -185,6 +193,22 @@
 				DF2C59BD262FCB9F00F229E8 /* Info.plist */,
 			);
 			path = MealPlanUnitTests;
+			sourceTree = "<group>";
+		};
+		DF2C59CF26310C5A00F229E8 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				DF2C59D026310C6900F229E8 /* Sidebar.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		DF2C59DC26310CA400F229E8 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				DF2C59DD26310CB600F229E8 /* MenuView.swift */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,6 +400,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF2C599F262FC83E00F229E8 /* ContentView.swift in Sources */,
+				DF2C59DE26310CB600F229E8 /* MenuView.swift in Sources */,
+				DF2C59D126310C6900F229E8 /* Sidebar.swift in Sources */,
 				DF2C599D262FC83E00F229E8 /* MealPlanApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +411,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF2C59A0262FC83E00F229E8 /* ContentView.swift in Sources */,
+				DF2C59F926310DBF00F229E8 /* MenuView.swift in Sources */,
+				DF2C59F326310DB400F229E8 /* Sidebar.swift in Sources */,
 				DF2C599E262FC83E00F229E8 /* MealPlanApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,7 +429,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF2C599B262FC83E00F229E8 /* Tests_macOS.swift in Sources */,
+				DF2C599B262FC83E00F229E8 /* MealPlanSidebar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
