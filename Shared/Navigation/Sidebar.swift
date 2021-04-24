@@ -20,7 +20,7 @@ struct Sidebar: View {
                    })
                     .accessibility(identifier: "default")
                 NavigationLink(
-                   destination: MenuView()
+                    destination: MenuView(menuViewModel: MenuViewModel())
                     .background(Color.white)
                     .colorScheme(.light),
                    label: {

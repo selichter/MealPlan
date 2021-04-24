@@ -16,8 +16,9 @@ class Tests_iOS: XCTestCase {
     
     
     func testNavigateToMenuView() {
+//        swiftui lists are built on uitables
         app.tables.buttons["Menu"].tap()
-        XCTAssert(app.staticTexts["Menu View Here"].exists)
+        XCTAssert(app.staticTexts["Weekly Menu"].exists)
         XCTAssert(app.navigationBars.buttons["MealPlan"].exists)
     }
     

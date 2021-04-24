@@ -19,10 +19,11 @@ class MealPlanSidebar: XCTestCase {
     func testNavigateToMenuView() {
         let window = app.windows["MealPlan"]
         window.outlines.buttons["Menu"].click()
-        XCTAssert(window.staticTexts["Menu View Here"].exists)
+        XCTAssert(window.staticTexts["Weekly Menu"].exists)
     }
     
     func testNavigateToDefaultView() {
+//        MealPlan as in app name
         let window = app.windows["MealPlan"]
         window.outlines.buttons["Default"].click()
         XCTAssert(window.staticTexts["Hello, world!"].exists)
