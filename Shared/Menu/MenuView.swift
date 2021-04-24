@@ -17,6 +17,12 @@ struct MenuView: View {
     let availableMeals = ["Breakfast", "Lunch", "Snack", "Dinner"]
     
     
+    fileprivate func resetFood() {
+        newFood = ""
+        newMeal = ""
+        addingEntry.toggle()
+    }
+    
     var body: some View {
         VStack(alignment: .leading) {
             Text("Weekly Menu")
@@ -25,25 +31,9 @@ struct MenuView: View {
                 .padding()
             
             List {
-                HStack {
-                    Text("Food")
-                        .font(.title)
-                    Spacer()
-                    Text("Meal of Day")
-                        .font(.title)
-                    Spacer()
-                }.padding(.horizontal)
-                
+                MenuHeaderView()
                 ForEach(menuViewModel.menu) { food in
-                    HStack {
-                        Text(food.food)
-                            .padding(.horizontal)
-                            .accessibility(identifier: "\(food)")
-                        Spacer()
-                        Text(food.mealOfDay)
-                            .padding(.horizontal)
-                        Spacer()
-                    }
+                    MenuRowView(food: food.food, meal: food.mealOfDay)
                 }
                 
                 if !addingEntry {
@@ -55,15 +45,13 @@ struct MenuView: View {
                     HStack {
                         TextField("Food", text: $newFood) { _ in } onCommit: {}
                         Picker("Meal", selection: $newMeal) {
-                                                    ForEach(availableMeals, id: \.self) { meal in
-                                                        Text(meal).tag(meal)
-                                                    }
+                            ForEach(availableMeals, id: \.self) { meal in
+                                Text(meal).tag(meal)
+                            }
                         }.accessibilityIdentifier("MealPicker")
                         Button("Save", action: {
                             menuViewModel.addMealToMenu(food: newFood, mealOfDay: newMeal)
-                            newFood = ""
-                            newMeal = ""
-                            addingEntry.toggle()
+                            resetFood()
                         })
                     }
                     
