@@ -23,6 +23,27 @@ struct MenuView: View {
         addingEntry.toggle()
     }
     
+    fileprivate func getPickerLabel() -> String {
+        var label = "Meal"
+        if newMeal != "" {
+            label = newMeal
+        }
+        return label
+    }
+    
+    @ViewBuilder func menuContents() -> some View {
+            Button("Breakfast") { self.newMeal = "Breakfast" }
+            Button("Lunch") { self.newMeal = "Lunch" }
+            Button("Snack") { self.newMeal = "Snack" }
+            Button("Dinner") { self.newMeal = "Dinner" }
+    }
+    
+    @ViewBuilder func menuLabel() -> some View {
+        HStack {
+            Text(getPickerLabel())
+        }
+    }
+    
     var body: some View {
         VStack(alignment: .leading) {
             Text("Weekly Menu")
@@ -31,7 +52,8 @@ struct MenuView: View {
                 .padding()
             
             List {
-                MenuHeaderView()
+                MenuRowView(food: "Food", meal: "Meal of Day")
+                    .font(.title2)
                 ForEach(menuViewModel.menu) { food in
                     MenuRowView(food: food.food, meal: food.mealOfDay)
                 }
@@ -44,20 +66,22 @@ struct MenuView: View {
                 if addingEntry {
                     HStack {
                         TextField("Food", text: $newFood) { _ in } onCommit: {}
-                        Picker("Meal", selection: $newMeal) {
-                            ForEach(availableMeals, id: \.self) { meal in
-                                Text(meal).tag(meal)
-                            }
-                        }.accessibilityIdentifier("MealPicker")
-                        Button("Save", action: {
+                            .frame(width: 250)
+                        
+                        Menu(content: menuContents, label: menuLabel)
+                            .frame(width: 250)
+                        
+                        Button(action: {
                             menuViewModel.addMealToMenu(food: newFood, mealOfDay: newMeal)
                             resetFood()
-                        })
+                        }) {
+                            Image(systemName: "checkmark")
+                        }
                     }
                     
                 }
                 
-            }
+            }.padding(.horizontal)
         }
     }
 }

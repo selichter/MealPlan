@@ -10,15 +10,17 @@ import SwiftUI
 struct MenuRowView: View {
     var food: String
     var meal: String
+    
     var body: some View {
-        HStack {
+        let columns = [
+            GridItem(.fixed(250.00), spacing: 10),
+            GridItem(.fixed(250.00), spacing: 10)
+        ]
+        LazyVGrid(columns: columns, alignment: .leading) {
             Text(food)
-                .padding(.horizontal)
                 .accessibility(identifier: "\(food)")
-            Spacer()
             Text(meal)
-                .padding(.horizontal)
-            Spacer()
+                .accessibility(identifier: "\(meal)")
         }
     }
 }

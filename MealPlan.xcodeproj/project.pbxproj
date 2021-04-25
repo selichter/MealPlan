@@ -26,8 +26,6 @@
 		DFE1EC602634872B00D68F8A /* TestMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE1EC5F2634872B00D68F8A /* TestMenuViewModel.swift */; };
 		DFE1EC88263488EC00D68F8A /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE1EC87263488EC00D68F8A /* Meal.swift */; };
 		DFE1EC89263488EC00D68F8A /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE1EC87263488EC00D68F8A /* Meal.swift */; };
-		DFE1ECA22634C91100D68F8A /* MenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE1ECA12634C91100D68F8A /* MenuHeaderView.swift */; };
-		DFE1ECA32634C91100D68F8A /* MenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE1ECA12634C91100D68F8A /* MenuHeaderView.swift */; };
 		DFE1ECAA2634C94900D68F8A /* MenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE1ECA92634C94900D68F8A /* MenuRowView.swift */; };
 		DFE1ECAB2634C94900D68F8A /* MenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE1ECA92634C94900D68F8A /* MenuRowView.swift */; };
 /* End PBXBuildFile section */
@@ -87,7 +85,6 @@
 		DFE1EC5226347FC700D68F8A /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
 		DFE1EC5F2634872B00D68F8A /* TestMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMenuViewModel.swift; sourceTree = "<group>"; };
 		DFE1EC87263488EC00D68F8A /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
-		DFE1ECA12634C91100D68F8A /* MenuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuHeaderView.swift; sourceTree = "<group>"; };
 		DFE1ECA92634C94900D68F8A /* MenuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -225,7 +222,6 @@
 			isa = PBXGroup;
 			children = (
 				DF2C59DD26310CB600F229E8 /* MenuView.swift */,
-				DFE1ECA12634C91100D68F8A /* MenuHeaderView.swift */,
 				DFE1EC5226347FC700D68F8A /* MenuViewModel.swift */,
 				DFE1EC87263488EC00D68F8A /* Meal.swift */,
 				DFE1ECA92634C94900D68F8A /* MenuRowView.swift */,
@@ -426,7 +422,6 @@
 				DFE1EC88263488EC00D68F8A /* Meal.swift in Sources */,
 				DF2C59D126310C6900F229E8 /* Sidebar.swift in Sources */,
 				DFE1ECAA2634C94900D68F8A /* MenuRowView.swift in Sources */,
-				DFE1ECA22634C91100D68F8A /* MenuHeaderView.swift in Sources */,
 				DFE1EC5326347FC700D68F8A /* MenuViewModel.swift in Sources */,
 				DF2C599D262FC83E00F229E8 /* MealPlanApp.swift in Sources */,
 			);
@@ -441,7 +436,6 @@
 				DFE1EC89263488EC00D68F8A /* Meal.swift in Sources */,
 				DF2C59F326310DB400F229E8 /* Sidebar.swift in Sources */,
 				DFE1ECAB2634C94900D68F8A /* MenuRowView.swift in Sources */,
-				DFE1ECA32634C91100D68F8A /* MenuHeaderView.swift in Sources */,
 				DFE1EC5426347FC700D68F8A /* MenuViewModel.swift in Sources */,
 				DF2C599E262FC83E00F229E8 /* MealPlanApp.swift in Sources */,
 			);
