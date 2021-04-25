@@ -12,6 +12,8 @@ struct MealPlanApp: App {
     var body: some Scene {
         WindowGroup {
             Sidebar()
+                .background(Color.white)
+                .colorScheme(.light)
         }
     }
 }
